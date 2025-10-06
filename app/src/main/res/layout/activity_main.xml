@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Smart LED Control"
+            android:textSize="22sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Estado visual del LED -->
+        <View
+            android:id="@+id/viewLed"
+            android:layout_width="120dp" android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:background="#808080"
+            android:layout_gravity="center"/>
+
+        <!-- Botón para alternar LED -->
+        <Button
+            android:id="@+id/btnToggle"
+            android:text="Encender LED"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Sección Bluetooth -->
+        <TextView
+            android:text="Bluetooth"
+            android:textStyle="bold" android:layout_marginTop="24dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnServer"
+            android:text="Iniciar como HOST (Servidor)"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnClient"
+            android:text="Conectar a HOST (Cliente)"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spPaired"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:text="Estado: Sin conexión"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
